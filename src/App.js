@@ -1,5 +1,6 @@
 import './App.css';
-import Dictionary from "./DictionaryForm";
+import DictionaryForm from "./DictionaryForm";
+
 
 export default function App() {
   return (
@@ -10,7 +11,7 @@ export default function App() {
           <h3 className="text-center">What word are you looking for?</h3>
         </header>
         <main>
-          <Dictionary/>
+          <DictionaryForm/>
         </main>
       </div>
       <footer className="coded-by"></footer>
