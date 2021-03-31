@@ -9,16 +9,11 @@ export default function DictionaryForm(props) {
     let [results, setResults] = useState({ready: false});
 
     function handleResponse(response) {
+        console.log(response.data[0]);
         setResults({
             ready: true,
-            word: response.data[0].word,
-            phoneticText: response.data[0].phonetics[0].text,
-            phoneticAudio: response.data[0].phonetics[0].audio,
-            partOfSpeech: response.data[0].meanings[0].partOfSpeech,
-            definition: response.data[0].meanings[0].definitions[0].definition,
-            example: response.data[0].meanings[0].definitions[0].example,
-            synonyms: response.data[0].meanings[0].definitions[0].synonyms,
-        })
+            response: response.data[0],
+        });
     }
 
     function search(event) {
