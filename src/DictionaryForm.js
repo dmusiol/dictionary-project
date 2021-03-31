@@ -1,7 +1,8 @@
 import React, { useState} from "react";
-import './DictionaryForm.css';
+import './styles/DictionaryForm.css';
 import axios from "axios";
 import SearchResults from "./SearchResults";
+import WordResult from "./WordResult";
 
 
 export default function DictionaryForm(props) {
@@ -30,12 +31,17 @@ export default function DictionaryForm(props) {
 
 
     return (
-        <div className="search-form">
-           <form className="dictionary-form" onSubmit={search}>
-               <input type="search" className="search-input" placeholder="Type your word" onChange={handleKeywordChange}></input>
-               <button type="submit" className="search-btn">Search</button>
-           </form>
-           <SearchResults results={results}/>
+        <div>
+            <div className="search-form">
+              <form className="dictionary-form" onSubmit={search}>
+                <input type="search" className="search-input" placeholder="Type your word" onChange={handleKeywordChange}></input>
+                <button type="submit" className="search-btn">Search</button>
+              </form>
+           </div>
+            <div className="all-results">
+               <WordResult results={results}/>
+               <SearchResults results={results}/>
+            </div>
         </div>
     )
 }

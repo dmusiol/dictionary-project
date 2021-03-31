@@ -1,0 +1,52 @@
+:root {
+  --font-color: #5730a9;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-stretch: expanded;
+  font-size: 18px;
+}
+
+.search-form {
+  background-color: white;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-bottom: 80px;
+}
+
+.dictionary-form {
+  display: flex;
+  justify-content: center;
+}
+.search-input {
+  width: 55%;
+}
+
+.search-btn {
+  margin-left: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 6px 12px;
+  background-color: var(--font-color);
+  border-style: none;
+  color: white;
+}
+
+.all-results {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 20px;
+  padding: 40px;
+  background-color: white;
+}
+
+.audio-btn {
+  border-style: none;
+  background-color: white;
+  font-size: 24px;
+  color: var(--font-color);
+  padding: 0 10px;
+}

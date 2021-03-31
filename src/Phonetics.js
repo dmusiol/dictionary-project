@@ -1,5 +1,6 @@
 import React from "react";
-import {AiFillAudio} from 'react-icons/ai';
+import {AiFillSound} from 'react-icons/ai';
+
 
 export default function Phonetics(props) {
 let audio = new Audio(props.phonetics.audio);
@@ -11,8 +12,7 @@ const playAudio = () => {
     if (props.phonetics) {
         return (
             <div className="phonetics-wraper d-flex">
-                <p>{props.phonetics.text}</p>
-                <button className="audio-btn" onClick={playAudio}><AiFillAudio/></button>
+                <button className="audio-btn" onClick={playAudio}><AiFillSound/></button>
             </div>
         )
     } else {
