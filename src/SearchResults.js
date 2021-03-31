@@ -1,5 +1,6 @@
 import React from "react";
 import Meaning from "./Meaning";
+import searchImg from "./images/searchImg.svg";
 
 
 export default function SearchResults(props){
@@ -17,7 +18,11 @@ export default function SearchResults(props){
             </div>
         )
     } else {
-        return null;
+        return (
+            <div className="d-flex justify-content-center">
+                <img src={searchImg} alt="Search" className="main-img"></img>
+            </div>
+        )
     }
     
 }

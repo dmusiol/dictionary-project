@@ -1,3 +1,21 @@
 :root {
   --font-color: #5730a9;
 }
+
+h5 {
+  color: var(--font-color);
+  padding-bottom: 10px;
+}
+
+.meanings-wraper {
+  padding: 20px 0;
+}
+
+.example {
+  font-style: italic;
+  font-weight: 300;
+}
+
+.example::first-letter {
+  text-transform: capitalize;
+}
