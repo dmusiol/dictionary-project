@@ -1,0 +1,20 @@
+:root {
+  --background-color: #e0dbeb;
+}
+
+.synonyms p {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.synonyms ul {
+  list-style: none;
+  padding: 20px 0 10px 10px;
+}
+
+.synonyms li {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-color);
+  border-radius: 4px;
+  font-size: 16px;
+}
