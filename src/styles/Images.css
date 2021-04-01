@@ -1,0 +1,14 @@
+.images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.img-wraper img {
+  max-width: 260px;
+  height: auto;
+  padding: 5px;
+  margin: 10px;
+  object-fit: cover;
+}

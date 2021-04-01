@@ -1,6 +1,7 @@
 :root {
   --background-color: #e0dbeb;
   --font-color: #5730a9;
+  --padding-color: #f7f6f9;
 }
 
 body {
@@ -20,13 +21,13 @@ body {
   background-color: white;
   margin-left: 5px;
   margin-right: 5px;
-  height: 260px;
+  height: 300px;
 }
 
 h1 {
   font-family: "Roboto Mono", monospace;
   margin: 10px auto;
-  padding-top: 50px;
+  padding-top: 60px;
   padding-bottom: 40px;
   color: var(--font-color);
   font-size: 60px;
@@ -38,13 +39,4 @@ h3 {
   font-weight: 400;
   margin: 20px auto;
   padding: 20px auto;
-}
-
-.main-img {
-  width: 50%;
-  height: auto;
-  padding: 20px 10px;
-  border-radius: 30%;
-  box-shadow: -8px 4px 2px rgb(230, 230, 230);
-  opacity: 0.8;
 }
