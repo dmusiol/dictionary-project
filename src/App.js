@@ -1,5 +1,6 @@
 import './styles/App.css';
 import DictionaryForm from "./DictionaryForm";
+import Footer from "./Footer";
 
 
 export default function App() {
@@ -13,8 +14,8 @@ export default function App() {
         <main>
           <DictionaryForm/>
         </main>
+        <Footer />
       </div>
-      <footer className="coded-by"></footer>
     </div>
   );
 }
