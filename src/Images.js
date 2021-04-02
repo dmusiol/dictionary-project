@@ -2,7 +2,6 @@ import React from "react";
 import "./styles/Images.css";
 
 export default function Images({images}) {
-    console.log(images);
 
     if(images) {
         return (
