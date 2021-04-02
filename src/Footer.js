@@ -10,7 +10,7 @@ export default function Footer(){
             <div className="row footer-row">
                 <div className="col-md-6 d-flex flex-column p-0">
                     <p>This project has been coded by Dominika Musioł.</p>
-                    <p>Open-sourced on GitHub</p>
+                    <p><a href="https://github.com/dmusiol/dictionary-project">Open-sourced</a> on GitHub</p>
                 </div>
                 <div className="col-md-6 media-icons">
                     <a href="https://www.facebook.com/dominikabm/" title="Facebook Profile" target="_blank" rel="noreferrer"><AiFillFacebook/></a>
