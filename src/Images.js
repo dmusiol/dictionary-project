@@ -9,11 +9,11 @@ export default function Images({images}) {
                 {images.map(function(image) {
                     return (
                     <div className="img-wraper">
-                        <a href={image.src.original} target="_blank" rel="noreferrer"> 
+                        <a href={image.pageURL} target="_blank" rel="noreferrer"> 
                             <img 
-                            src={image.src.landscape} 
+                            src={image.webformatURL} 
                             key={image.id} 
-                            alt={image.src.photographer} />
+                            alt={image.user} />
                         </a>
                     </div>
                 )})}

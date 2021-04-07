@@ -1,7 +1,12 @@
+img {
+  width: 220px;
+  max-height: 150px;
+}
+
 .images {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
 }
 

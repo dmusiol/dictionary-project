@@ -18,8 +18,8 @@ export default function DictionaryForm(props) {
     }
 
     // Pexels API response
-    function handlePexelsResponse(response) {
-        setImages(response.data.photos);
+    function handleImagesResponse(response) {
+        setImages(response.data.hits);
     }
 
 
@@ -30,11 +30,14 @@ export default function DictionaryForm(props) {
         axios.get(apiURL).then(handleDictionaryResponse);
 
          // pexels API call
-        let pexelsApiKey = "563492ad6f91700001000001a6727e57f29040469e8b529237d7fe76";
-        let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
-        let headers = { Authorization: `Bearer ${pexelsApiKey}` };
-        axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
+        //let pexelsApiKey = `${process.env.REACT_APP_IMAGES_KEY}`;
+        //let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
+        //let headers = { Authorization: `Bearer ${pexelsApiKey}` };
+        //axios.get(pexelsApiUrl, { headers: headers }).then(handleImagesResponse);
 
+        let pixbayKey = `${process.env.REACT_APP_PIXBAY_KEY}`;
+        let pixbayURL = `https://pixabay.com/api/?key=${pixbayKey}&q=${keyword}&image_type=photo&per_page=5`;
+        axios.get(pixbayURL).then(handleImagesResponse);
     }
 
     function handleSubmit(e) {
