@@ -11,3 +11,14 @@
   border-radius: 4px;
   font-size: 18px;
 }
+
+@media (max-width: 540px) {
+  .synonyms ul {
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .synonyms li {
+    font-size: 16px;
+  }
+}

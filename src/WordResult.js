@@ -17,7 +17,7 @@ export default function WordResult(props) {
                     })}
                     </div>
                 <div>
-                    <p className="pt-2 pb-5">{props.results.phonetics[0].text}</p>
+                    <p className="pt-2 pb-sm-5">{props.results.phonetics[0].text}</p>
                 </div>
             </div>
         )

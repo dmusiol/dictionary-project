@@ -15,3 +15,17 @@ h5 {
 .example::first-letter {
   text-transform: capitalize;
 }
+
+@media (max-width: 540px) {
+  h5 {
+    padding-top: 20px;
+    font-size: 18px;
+  }
+  p {
+    font-size: 16px;
+  }
+
+  .meanings-wraper {
+    padding-bottom: 10px;
+  }
+}

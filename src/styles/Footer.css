@@ -16,6 +16,13 @@
   margin-left: 5px;
   margin-right: 5px;
 }
+
+.coded-by {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .media-icons {
   display: flex;
   align-items: center;
@@ -40,4 +47,25 @@
 
 .source-link a:hover {
   color: var(--font-color);
+}
+
+@media (max-width: 540px) {
+  .footer-wraper {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  .media-icons {
+    justify-content: space-around;
+  }
+
+  .source-link {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .project-coded {
+    display: none;
+  }
 }

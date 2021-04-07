@@ -8,8 +8,8 @@ export default function Footer(){
     return (
         <div className="container footer-wraper">
             <div className="row footer-row">
-                <div className="col-md-6 d-flex flex-column p-0">
-                    <p className="pt-3">This project has been coded by Dominika Musioł.</p>
+                <div className="col-md-6 p-0 coded-by">
+                    <p className="pt-3 project-coded">This project was coded by Dominika Musioł.</p>
                     <p className="source-link"><a href="https://github.com/dmusiol/dictionary-project">Open-sourced</a> on GitHub.</p>
                 </div>
                 <div className="col-md-6 media-icons">
