@@ -68,4 +68,8 @@ p {
     margin-top: 20px;
     padding: 20px;
   }
+
+  .audio-btn {
+    font-size: 18px;
+  }
 }
